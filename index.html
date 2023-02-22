@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PORTFOLIO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Style the header */
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #c39071;
+            color: rgb(15, 14, 14);
+        }
+
+        /* Increase the font size of the h1 element */
+        .header h1 {
+            font-size: 40px;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            overflow: hidden;
+            background-color: #6a5656;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(32, 29, 29);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* Right-aligned link */
+        .navbar a.right {
+            float: right;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: #dec1c1;
+            color: black;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            background-color: rgb(163, 157, 157);
+        }
+
+        /* Main column */
+        .achievements {
+            flex: 70%;
+            background-color: rgb(141, 107, 107);
+            padding: 20px;
+            width: 200px;
+
+            height: 1000px;
+        }
+
+        .one {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .two {
+            margin-left: 200px;
+        }
+
+        .three {
+            margin-left: 200px;
+        }
+
+        .achievements1 {
+            margin-left: 480px;
+            margin-top: 30%;
+            position: absolute;
+            height: 500px;
+            width: 70%;
+        }
+
+        .gsoc {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: black;
+            color: white;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+            background-color: #aaa;
+            width: 200px;
+
+            padding: 0;
+            overflow: hidden;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #bd8150;
+            margin-top: 0px;
+            width: 100%;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Dimple Bhagat</h1>
+        <p>Welcome to my website.</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Certifications</a>
+        <a href="#">Socials</a>
+        <a href="#" class="right">Contact</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="height:200px;"><img src="me.jpg" alt="profile" height="200px" width="200px">
+            </div>
+            <p>Studying at KLS Gogte Institute of Technology Belgaum.</p>
+            <h3>Social media</h3>
+            <p>You can contact me here.</p>
+            <div class="fakeimg" style="height:60px;width:60px;">
+                <img src="insta.jpg" alt="insta" height="60px">
+            </div>
+            <p>@dimpllle</p><br>
+            <div class="fakeimg" style="height:60px;width:60px;">
+                <img src="twitter.jpg" alt="twitter" height="60px">
+            </div>
+            <p>Dimple Bhagat</p><br>
+            <div class="fakeimg" style="height:60px;width:60px;">
+                <img src="linkedin.jpg" alt="Linked in" height="60px">
+            </div>
+            <p>Dimple Bhagat</p><br>
+        </div>
+        <div class="achievements">
+            <h2>Achievements</h2>
+            <div class="one">
+                <h5>Event head @UnifiedStudentCommunity</h5>
+                <div class="fakeimg" style="height:200px;"><img src="eventhead.jpg" alt="achievements" width="100%"
+                        height="250px"></div>
+                <p class="gsoc">Event Head</Head>
+                </p>
+                <p class="gsoc">Only community of GIT</p>
+            </div>
+            <div class="one">
+                <h5>Member of Clubs</h5>
+                <div class="fakeimg" style="height:200px;"><img src="club.jpg" alt="achievements" width="70%"
+                        height="200px"></div>
+                <p class="gsoc">Rotract,Music,Astronomy</Head>
+                </p>
+                <p class="gsoc">Part of U&I(non-profit org.)</p>
+            </div>
+            <div class="one">
+                <h5>Literature</h5>
+                <div class="fakeimg" style="height:200px;"><img src="lit.jpg" alt="achievements" width="140%"
+                        height="250px"></div>
+                <p class="gsoc">Lyricist,Writer</Head>
+                </p>
+                <p class="gsoc">for Musicians</p>
+            </div>
+            <div class="one">
+                <h5>Medals</h5>
+                <div class="fakeimg" style="height:200px;"><img src="medal.jpg" alt="achievements" width="120%"
+                        height="250px"></div>
+                <p class="gsoc">Bronze and Gold Medalist</Head>
+                </p>
+                <p class="gsoc">Olympiad and Elocution</p>
+            </div>
+        </div>
+        <div class="achievements1">
+            <h2>Skills</h2>
+            <div class="one">
+                <h5>Music</h5>
+                <div class="fakeimg" style="height:200px;">
+                    <img src="guitar.jpg" alt="achievements" width="100%" height="230px">
+                </div>
+                <p class="gsoc">Vocalist,Guitarist,Writer
+                </p>
+                <p class="gsoc">Self-taught</p>
+            </div>
+            <div class="one">
+                <h5>Basketball Player</h5>
+                <div class="fakeimg" style="height:200px;"><img src="basketball.jpg" alt="achievements" width="150%"
+                        height="200px"></div>
+                <p class="gsoc">Hyderabad</Head>
+                </p>
+                <p class="gsoc">Telangana</p>
+            </div>
+            <div class="one">
+                <h5>Professional Player</h5>
+                <div class="fakeimg" style="height:200px;"><img src="ludo.jpeg" alt="achievements" width="100%"
+                        height="250px"></div>
+                <p class="gsoc">Ludo</Head>
+                </p>
+                <p class="gsoc">Player</p>
+            </div>
+            <div class="one">
+                <h5>Web Developer</h5>
+                <div class="fakeimg" style="height:200px;"><img src="web.jpeg" alt="achievements" width="100%"
+                        height="250px"></div>
+                <p class="gsoc">Professional</Head>
+                </p>
+                <p class="gsoc">Front-end developer</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>&copy dimplle</h2>
+    </div>
+
+
+</body>
+
+</html>
